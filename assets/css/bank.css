@@ -1,0 +1,93 @@
+.box{
+	background: rgba(75, 75, 75, 0.15);
+	width: 80%;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.frame {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	height: 80px;
+	width: 80%;
+	position: relative;
+
+}
+
+.frame h3 {
+	font-size: 1.1em;
+	color: #ffffff;
+}
+
+.btn {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-tap-highlight-color: transparent;
+	background: #f0f0f0;
+	box-shadow:  5px -5px 10px #2d2d2d,
+				 -5px 5px 10px #535353;
+	font-size: 16px;
+	color: rgba(42, 52, 84, 1);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.btn:active {
+	border-radius: 3px;
+	box-shadow: inset 20px 20px 60px #000000,
+            inset -20px -20px 60px #1ee983;
+}
+
+.title-box {
+	height: 80px;
+	width: 200px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+
+.detail-box {
+	height: 80px;
+	width: 500px;
+	align-items: center;
+	text-align: left;
+	justify-content: center;
+	display: inline-flex;
+}
+
+.copy-box {
+	height: 80px;
+	width: 100px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+
+@media only screen and (max-width:800px) {
+	/* For tablets: */
+	.frame {
+		width: 90%;
+		padding: 10px;
+	}
+	.frame h3 {
+		font-size: .7em;
+	}
+	p{
+		font-size: .6em;
+	}
+	.btn{
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+}

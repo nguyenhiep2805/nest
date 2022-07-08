@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="parallax one page"/>
+    <meta name="keyword" content="Nguyen Hiep, Hiep Code, web, blog, blogger, UI-UX"/>
+
+    <!--  Title -->
+    <title>Yến Sào Ngân Giàu | VietinBank</title>
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&amp;display=swap" rel="stylesheet"/>
+
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon"/>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/x-icon"/>
+
+    <!-- custom styles (optional) -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+    />
+    <link href="assets/css/plugins.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/bank.css" rel="stylesheet"/>
+    <link href="assets/css/page.css" rel="stylesheet"/>
+    <link href="assets/css/toast.css" rel="stylesheet"/>
+</head>
+
+<body class="hamburger-menu dsn-effect-scroll dsn-ajax" data-dsn-mousemove="true">
+<div class="preloader">
+    <div class="preloader-after"></div>
+    <div class="preloader-before"></div>
+    <div class="preloader-block">
+        <div class="title">Ngân Giàu Nest</div>
+        <div class="percent">0</div>
+        <div class="loading">Đang tải...</div>
+    </div>
+    <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+    </div>
+</div>
+
+<!-- Nav Bar -->
+<div class="dsn-nav-bar">
+    <div class="site-header">
+        <div class="extend-container">
+            <div class="inner-header">
+                <div class="main-logo">
+                    <a href="index.html">
+                        <img class="dark-logo" src="assets/img/logo-dark.png" alt=""/>
+                        <img class="light-logo" src="assets/img/logo.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <nav class="accent-menu main-navigation">
+                <ul class="extend-container">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="product.html">Sản phẩm</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="header-top header-top-hamburger">
+        <div class="header-container">
+            <div class="logo main-logo">
+                <a href="index.html">
+                    <img class="dark-logo" src="assets/img/logo-dark.png" alt=""/>
+                    <img class="light-logo" src="assets/img/logo.png" alt=""/>
+                </a>
+            </div>
+
+            <div class="menu-icon" data-dsn="parallax" data-dsn-move="5">
+                <div class="icon-m">
+                    <i class="menu-icon-close fas fa-times"></i>
+                    <span class="menu-icon__line menu-icon__line-left"></span>
+                    <span class="menu-icon__line"></span>
+                    <span class="menu-icon__line menu-icon__line-right"></span>
+                </div>
+
+                <div class="text-menu">
+                    <div class="text-button">Menu</div>
+                    <div class="text-open">Mở</div>
+                    <div class="text-close">Đóng</div>
+                </div>
+            </div>
+
+            <div class="nav">
+                <div class="inner">
+                    <div class="nav__content"></div>
+                </div>
+            </div>
+            <div class="nav-content">
+                <div class="inner-content">
+                    <address class="v-middle">
+                        <span><strong>Cơ sở Yến Sào Ngân Giàu</strong></span>
+                        <span>Địa chỉ: Ấp 6B, Trường Xuân, Tháp Mười, Đồng Tháp</span>
+                        <span>Số điện thoại: 0948 66 33 39</span>
+                        <span>Email: nbee040801@gmail.com</span>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Nav Bar -->
+
+<main class="main-root">
+    <div id="dsn-scrollbar">
+        <header>
+            <div class="container header-hero">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contenet-hero">
+                            <h5>Chuyển khoản đến Yến Sào Ngân Giàu</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <div class="box">
+                <div class="frame">
+                    <div class="title-box">
+                        <h3>Ngân hàng</h3>
+                    </div>
+                    <div class="detail-box">
+                        <div id="toast"></div>
+                        <p id="name-bank">VietinBank - Thương mại cổ phần Công Thương Việt Nam</p>
+                    </div>
+                    <div class="copy-box" onclick="showSuccessToast()">
+                        <div class="btn" onclick="copyToClipboard('#name-bank')">
+                            <i class="far fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="title-box">
+                        <h3>Chi nhánh</h3>
+                    </div>
+                    <div class="detail-box">
+                        <p id="branch">Đồng Tháp</p>
+                    </div>
+                    <div class="copy-box" onclick="showSuccessToast()">
+                        <div class="btn" onclick="copyToClipboard('#branch')">
+                            <i class="far fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="title-box">
+                        <h3>Chủ tài khoản</h3>
+                    </div>
+                    <div class="detail-box">
+                        <p id="account-holder">TRAN THI KIM NGAN</p>
+                    </div>
+                    <div class="copy-box" onclick="showSuccessToast()">
+                        <div class="btn" onclick="copyToClipboard('#account-holder')">
+                            <i class="far fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="title-box">
+                        <h3>Số tài khoản</h3>
+                    </div>
+                    <div class="detail-box">
+                        <p id="account-number">1008 4866 3339</p>
+                    </div>
+                    <div class="copy-box" onclick="showSuccessToast()">
+                        <div class="btn" onclick="copyToClipboard('#account-number')">
+                            <i class="far fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="contact-up section-margin section-padding">
+            <div class="container">
+                <div class="c-wapp">
+                    <a href="index.html" class="effect-ajax">
+                                <span class="hiring">
+                                    Yến Sào Ngân Giàu
+                                </span>
+                        <span class="career">
+                                    Quay lại trang chủ
+                                </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="info">
+            <div class="contact-footer">
+                <a href="mailto:nbee040801@gmail.com" class="email image-zoom" data-dsn="parallax">nbee040801@gmail.com</a>
+            </div>
+            <div class="copyright-social">
+                <p>© 2022 Yen Sao Ngan Giau</p>
+                <ul>
+                    <li class="image-zoom" data-dsn="parallax"><a href="https://facebook.com/ngan4801" target="_blank">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<!-- Wait Loader -->
+<div class="wait-loader">
+    <div class="loader-inner">
+        <div class="loader-circle">
+            <div class="loader-layer"></div>
+        </div>
+    </div>
+</div>
+<!-- // Wait Loader -->
+
+<!-- cursor -->
+<div class="cursor">
+    <div class="cursor-helper cursor-view">
+        <span>XEM</span>
+    </div>
+
+    <div class="cursor-helper cursor-close">
+        <span>Đóng</span>
+    </div>
+
+    <div class="cursor-helper cursor-link"></div>
+</div>
+<!-- End cursor -->
+
+<!-- Optional JavaScript -->
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/dsn-grid.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/copy.js"></script>
+<script src="assets/js/toast.js"></script>
+</body>
+</html>
